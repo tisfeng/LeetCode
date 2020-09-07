@@ -77,7 +77,7 @@ class RemoveDuplicates_5 {
             return length
         } 
         var n = length
-        var left = 0
+        let left = 0
         var right = length - 1
         var lastIndex = right
         while left <= right { //[1,1,1]

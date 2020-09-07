@@ -12,8 +12,8 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-                let solution = CanPlaceFlowers()
-                print(solution.canPlaceFlowers([0,0,1], 1))
+                let solution = MaximumProduct_52()
+                print(solution.maximumProduct([1,2,3]))
             }
         }
     }

@@ -15,9 +15,9 @@ class MaximumProduct {
             if i == 2 {
                 var arr = Array(nums.prefix(3))
                 arr = arr.sorted(by: >)
-                max1 = nums.index(of: arr[0])!
-                max2 = nums.index(of: arr[1])!
-                max3 = nums.index(of: arr[2])!
+                max1 = nums.firstIndex(of: arr[0])!
+                max2 = nums.firstIndex(of: arr[1])!
+                max3 = nums.firstIndex(of: arr[2])!
             } else if i > 2 {
                  if nums[i] > nums[max1] { // [1,2,3]
                         max3 = max2
@@ -60,7 +60,7 @@ class MaximumProduct {
 */
 class MaximumProduct_23 {
     func maximumProduct(_ nums: [Int]) -> Int {
-        var nums = nums.sorted()
+        let nums = nums.sorted()
         let n = nums.count - 1
         let max1 = nums[n] * nums[n - 1] * nums[n - 2]
         if nums[0] >= 0 {
@@ -78,7 +78,7 @@ class MaximumProduct_23 {
 */
 class MaximumProduct_52 {
     func maximumProduct(_ nums: [Int]) -> Int {
-        var nums = nums.sorted()
+        let nums = nums.sorted()
         let n = nums.count - 1
         let max1 = nums[n] * nums[n - 1] * nums[n - 2]
         let max2 = nums[0] * nums[1] * nums[n]

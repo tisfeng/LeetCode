@@ -93,45 +93,44 @@ void insertDataInRange(MedianFinder *obj, int start, int end, int num) {
 
 }
 
-static void insert_sort(MedianFinder *obj, int num) {
-    int *a = obj->data;
-    int length = obj->length;
-    int step = obj->step;
-    if(!length) {
-        a[step] = num;
-        obj->storeIndex[length] = step;
-    } else if(num >= a[length - 1]) {
-        a[(length + 1) * step] = num;
-        obj->storeIndex[length] = (length + 1) * step;
-    } else {
-        int insertIndex;
-        if(num < a[0]) {
-            insertIndex = 0;  
-              
-        } else {
-            int start = 0, end = length - 1;
-            int middle;
-            while(end - start > 1) { //二分法，查找插入位置
-                middle = (start + end) / 2;
-                if(a[middle] == num) {
-                    end = middle + 1;
-                    break;
-                }
-                if(a[middle] > num) {
-                    end = middle;
-                } else {
-                    start = middle;
-                }
-            }
-            insertIndex = end;
-        }  
-        for(int j = length; j > insertIndex; j--) { //大的元素后移
-            a[j] = a[j-1];
-        }
-        a[insertIndex] = num;
-    } 
-    // printArray(a, length+1);
-}
+//static void insert_sort(MedianFinder *obj, int num) {
+//    int *a = obj->data;
+//    int length = obj->length;
+//    int step = obj->step;
+//    if(!length) {
+//        a[step] = num;
+//        obj->storeIndex[length] = step;
+//    } else if(num >= a[length - 1]) {
+//        a[(length + 1) * step] = num;
+//        obj->storeIndex[length] = (length + 1) * step;
+//    } else {
+//        int insertIndex;
+//        if(num < a[0]) {
+//            insertIndex = 0;  
+//              
+//        } else {
+//            int start = 0, end = length - 1;
+//            int middle;
+//            while(end - start > 1) { //二分法，查找插入位置
+//                middle = (start + end) / 2;
+//                if(a[middle] == num) {
+//                    end = middle + 1;
+//                    break;
+//                }
+//                if(a[middle] > num) {
+//                    end = middle;
+//                } else {
+//                    start = middle;
+//                }
+//            }
+//            insertIndex = end;
+//        }  
+//        for(int j = length; j > insertIndex; j--) { //大的元素后移
+//            a[j] = a[j-1];
+//        }
+//        a[insertIndex] = num;
+//    } 
+//}
 
 // 二分法，查找插入位置，将num插入已排好序的数组a
 // void insert_sort(int a[], int length, int num) {

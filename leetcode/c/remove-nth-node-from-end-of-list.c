@@ -28,34 +28,33 @@ struct ListNode {
 //    printf("\n");
 //}
 
-static int *arrayFromList(struct ListNode *head, int *array, int length) {
-    struct ListNode *cursor = head;
-    for(int i = 0; i < length; i++) {
-        array[i] = cursor->val;
-        cursor = cursor->next;
-    }
-    return array;
-}
-
-static struct ListNode *listFromArray(int *array, int length) {
-    struct ListNode *head, *tail;
-
-    for(int i = 0; i < length; i++) {
-        struct ListNode *newNode = (struct ListNode *)malloc(sizeof(struct ListNode));
-        newNode->val = array[i];
-        newNode->next = NULL;
-        if (i == 0) {
-            head = newNode;
-            tail = head;
-            continue;
-        }
-        tail->next = newNode;
-        tail = newNode;
-    }
-
-    // printListNode(head);
-    return head;
-}
+//static int *arrayFromList(struct ListNode *head, int *array, int length) {
+//    struct ListNode *cursor = head;
+//    for(int i = 0; i < length; i++) {
+//        array[i] = cursor->val;
+//        cursor = cursor->next;
+//    }
+//    return array;
+//}
+//
+//static struct ListNode *listFromArray(int *array, int length) {
+//    struct ListNode *head = NULL, *tail = NULL;
+//
+//    for(int i = 0; i < length; i++) {
+//        struct ListNode *newNode = (struct ListNode *)malloc(sizeof(struct ListNode));
+//        newNode->val = array[i];
+//        newNode->next = NULL;
+//        if (i == 0) {
+//            head = newNode;
+//            tail = head;
+//            continue;
+//        }
+//        tail->next = newNode;
+//        tail = newNode;
+//    }
+//
+//    return head;
+//}
 
 // 删除数组元素 a[deleteIndex]
 int *arrayDeleteElement(int *array, int length, int deleteIndex) {
@@ -268,17 +267,17 @@ struct ListNode* deleteNode(struct ListNode *head, int n) {
 */
 
 // 翻转链表
- static struct ListNode* reverseList(struct ListNode *head) {
-     struct ListNode *tail = NULL;
-     struct ListNode *cursor = head;
-     while(cursor) {
-         head = cursor->next;
-         cursor->next = tail;
-         tail = cursor;
-         cursor = head;
-     }
-     return tail;
- }
+// static struct ListNode* reverseList(struct ListNode *head) {
+//     struct ListNode *tail = NULL;
+//     struct ListNode *cursor = head;
+//     while(cursor) {
+//         head = cursor->next;
+//         cursor->next = tail;
+//         tail = cursor;
+//         cursor = head;
+//     }
+//     return tail;
+// }
  
 // struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
 //     struct ListNode *reverseHead = reverseList(head);

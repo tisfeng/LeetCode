@@ -36,7 +36,7 @@ struct ListNode* reverseList(struct ListNode* head, struct ListNode **tail, int 
 }
 
 struct ListNode* reverseKGroup(struct ListNode* head, int k){
-    struct ListNode *cursor = head, *newHead = NULL, *temp, *groupHead, *nextHead, *tail, *prevTail;
+    struct ListNode *cursor = head, *newHead = NULL, *temp, *groupHead, *nextHead = NULL, *tail = NULL, *prevTail;
     int length = lengthOfList(head);
     int reverseCount = length / k;
     while(reverseCount--) {

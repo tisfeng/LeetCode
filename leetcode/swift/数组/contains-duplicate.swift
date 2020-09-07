@@ -9,7 +9,7 @@ class ContainsDuplicate {
         var map = [Int: Int]()
         for i in 0 ..< nums.count {
             let val = nums[i]
-            if let index = map[val] {
+            if map[val] != nil {
                 return true
             } else {
                 map[val] = i

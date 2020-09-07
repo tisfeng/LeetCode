@@ -8,7 +8,7 @@ class ThreeSum {
     func threeSum(_ nums: [Int]) -> [[Int]] {
         var tuple = [Int]()
         var result = [[Int]]()
-        var nums = nums.sorted()
+        let nums = nums.sorted()
 
         if nums.count < 3 || nums.last! < 0 || nums.first! > 0 {
             return result
@@ -126,10 +126,8 @@ class ThreeSum_10 {
 */
 class ThreeSum_0 {
     func threeSum(_ nums: [Int]) -> [[Int]] {
-        var tuple = [Int]()
-        var tupleSet = Set<[Int]>()
         var result = [[Int]]()
-        var sortedNums = nums.sorted()
+        let sortedNums = nums.sorted()
         var usedMap = [Int:Int]()
         let length = sortedNums.count
         if length < 3 {
@@ -137,7 +135,7 @@ class ThreeSum_0 {
         }
         
         var zeroCount = 0
-        var zeroIndex = searchNum(0, inArray: sortedNums)
+        let zeroIndex = searchNum(0, inArray: sortedNums)
         if zeroIndex >= 0 {
             for index in zeroIndex..<length {
                 if sortedNums[index] == 0 {
@@ -193,7 +191,7 @@ class ThreeSum_0 {
     }
     
     func searchNumMaxIndex(_ num: Int, inArray sortedArr: [Int]) -> Int {
-        var minIndex = searchNum(num, inArray: sortedArr)
+        let minIndex = searchNum(num, inArray: sortedArr)
         var maxIndex = minIndex
         
         for index in (minIndex..<sortedArr.count) {

@@ -27,13 +27,13 @@ class MergeSortedArray {
         }
         // 填充另一数组的有效元素
         if j < n {
-            for k in j ..< n {
+            for _ in j ..< n {
                 nums1[index] = nums2[j]
                 j += 1
                 index += 1
             }
         } else {
-            for k in i ..< m {
+            for _ in i ..< m {
                 nums1[index] = nums[i]
                 i += 1
                 index += 1
@@ -49,7 +49,7 @@ class MergeSortedArray {
 class MergeSortedArray_71 {
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         // 移除多余的0
-        for i in m ..< nums1.count {
+        for _ in m ..< nums1.count {
             nums1.removeLast()
         }
         if m == 0 || n == 0 {

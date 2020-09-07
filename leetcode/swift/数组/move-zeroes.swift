@@ -7,7 +7,7 @@
 class MoveZeroes {
     func moveZeroes(_ nums: inout [Int]) {
         var i = 0 
-        var n = nums.count
+        let n = nums.count
         for j in 0 ..< n {
             if nums[j] != 0 {
                 nums[i] = nums[j]

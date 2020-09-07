@@ -222,7 +222,7 @@ class FourSumCount2_53 {
 class FourSumCount2_0 {
     func fourSumCount(_ A: [Int], _ B: [Int], _ C: [Int], _ D: [Int]) -> Int {
         var count = 0
-        var length = A.count
+        let length = A.count
         var map = [Int: Int]()
         var anotherNum = 0
 

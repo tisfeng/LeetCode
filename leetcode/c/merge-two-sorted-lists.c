@@ -52,7 +52,7 @@ void arrayFromList(struct ListNode *head, int *array, int length) {
 
 //创建链表（数组转链表）
 struct ListNode *listFromArray(int *array, int length) {
-    struct ListNode *head, *tail;
+    struct ListNode *head = NULL, *tail = NULL;
     for(int i = 0; i < length; i++) {
         struct ListNode *node = (struct ListNode *)malloc(sizeof(struct ListNode));
         node->val = array[i];
@@ -361,7 +361,6 @@ struct ListNode* insertNode(struct ListNode *head, int val, int index) {
 
 // 链表追加节点
 struct ListNode* appendNode(struct ListNode *head, int val) {
-    struct ListNode *tail;
     int len = lengthOfList(head);
     return insertNode(head, val, len);
 }

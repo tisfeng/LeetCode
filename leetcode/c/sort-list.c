@@ -90,7 +90,7 @@ static struct ListNode *merge_sort(struct ListNode *head) {
     int l_size = length / 2;
     struct ListNode *left = head;
     struct ListNode *cursor = head;
-    struct ListNode *right;
+    struct ListNode *right = NULL;
     while(l_size--) {
         right = cursor;
         cursor = cursor->next;

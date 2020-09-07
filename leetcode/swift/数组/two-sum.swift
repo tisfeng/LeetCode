@@ -36,7 +36,7 @@ class TwoSum_68 {
         if nums.count < 1 {
             return []
         }
-        var sortedNums = nums.sorted()
+        let sortedNums = nums.sorted()
         var left = 0
         var right = nums.count - 1
         if target < 0 {

@@ -6,8 +6,7 @@
 */
 class ThreeConsecutiveOdds {
     func threeConsecutiveOdds(_ arr: [Int]) -> Bool {
-        var i = 0, count = 0
-        let n = arr.count 
+        var count = 0
         for i in 0 ..< arr.count {
             if arr[i] % 2 == 1 {
                 count += 1

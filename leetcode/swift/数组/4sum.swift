@@ -9,7 +9,7 @@ class FourSumCount {
             return result
         }
         
-        var nums = nums.sorted()
+        let nums = nums.sorted()
         if target > 0 {
             if nums.first! > target || 4 * nums.last! < target {
                 return result
