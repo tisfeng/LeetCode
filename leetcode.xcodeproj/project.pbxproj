@@ -206,7 +206,7 @@
 			path = c;
 			sourceTree = "<group>";
 		};
-		803E5B622504CFE10095A89F /* 数组 */ = {
+		803E5B622504CFE10095A89F /* Array */ = {
 			isa = PBXGroup;
 			children = (
 				803E5B632504CFE10095A89F /* can-place-flowers.swift */,
@@ -226,13 +226,13 @@
 				803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */,
 				803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */,
 			);
-			path = "数组";
+			path = Array;
 			sourceTree = "<group>";
 		};
 		803E5B8B2504CFEB0095A89F /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				803E5B622504CFE10095A89F /* 数组 */,
+				803E5B622504CFE10095A89F /* Array */,
 			);
 			path = swift;
 			sourceTree = "<group>";
