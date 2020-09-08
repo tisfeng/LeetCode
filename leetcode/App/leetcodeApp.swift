@@ -12,8 +12,8 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-                let solution = MaximumProduct_52()
-                print(solution.maximumProduct([1,2,3]))
+                let solution = FlipAndInvertImage()
+                print(solution.flipAndInvertImage([[1,0,0,0]]))
             }
         }
     }

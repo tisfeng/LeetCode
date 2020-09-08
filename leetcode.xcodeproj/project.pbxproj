@@ -37,6 +37,7 @@
 		803E5B882504CFE20095A89F /* merge-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B702504CFE10095A89F /* merge-sorted-array.swift */; };
 		803E5B892504CFE20095A89F /* contains-duplicate-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */; };
 		803E5B8A2504CFE20095A89F /* remove-duplicates-from-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */; };
+		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		803E5B702504CFE10095A89F /* merge-sorted-array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "merge-sorted-array.swift"; sourceTree = "<group>"; };
 		803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "contains-duplicate-ii.swift"; sourceTree = "<group>"; };
 		803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "remove-duplicates-from-sorted-array.swift"; sourceTree = "<group>"; };
+		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +227,7 @@
 				803E5B702504CFE10095A89F /* merge-sorted-array.swift */,
 				803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */,
 				803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */,
+				80D404782507D98E0090F56C /* flipping-an-image.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				803E5B7D2504CFE20095A89F /* two-sum.swift in Sources */,
 				803E5B862504CFE20095A89F /* contains-duplicate-iii.swift in Sources */,
 				803E5B812504CFE20095A89F /* squares-of-a-sorted-array.swift in Sources */,
+				80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */,
 				803E5B2E2504CF4B0095A89F /* leetcodeApp.swift in Sources */,
 				803E5B8A2504CFE20095A89F /* remove-duplicates-from-sorted-array.swift in Sources */,
 				803E5B7C2504CFE20095A89F /* 4sum-ii.swift in Sources */,
