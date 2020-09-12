@@ -11,7 +11,7 @@ import Foundation
  执行用时：8 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：13.7 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class MagicSquares {
     func numMagicSquaresInside(_ grid: [[Int]]) -> Int {
         var count = 0
         let len = 3
@@ -76,7 +76,7 @@ class Solution {
  执行用时：12 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：13.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution_100 {
+class MagicSquares_100 {
     func numMagicSquaresInside(_ grid: [[Int]]) -> Int {
         var count = 0
         let i_len = grid.count

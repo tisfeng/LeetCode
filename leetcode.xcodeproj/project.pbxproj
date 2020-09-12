@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		802D81AA250A7FF900282733 /* magic-squares-in-grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D81A9250A7FF900282733 /* magic-squares-in-grid.swift */; };
+		802D81AC250D07CC00282733 /* search-insert-position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D81AB250D07CC00282733 /* search-insert-position.swift */; };
 		803E5B2E2504CF4B0095A89F /* leetcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B2D2504CF4B0095A89F /* leetcodeApp.swift */; };
 		803E5B302504CF4B0095A89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B2F2504CF4B0095A89F /* ContentView.swift */; };
 		803E5B322504CF520095A89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803E5B312504CF520095A89F /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		802D81A9250A7FF900282733 /* magic-squares-in-grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "magic-squares-in-grid.swift"; sourceTree = "<group>"; };
+		802D81AB250D07CC00282733 /* search-insert-position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "search-insert-position.swift"; sourceTree = "<group>"; };
 		803E5B2A2504CF4B0095A89F /* leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803E5B2D2504CF4B0095A89F /* leetcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetcodeApp.swift; sourceTree = "<group>"; };
 		803E5B2F2504CF4B0095A89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */,
 				80D404782507D98E0090F56C /* flipping-an-image.swift */,
 				802D81A9250A7FF900282733 /* magic-squares-in-grid.swift */,
+				802D81AB250D07CC00282733 /* search-insert-position.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				802D81AA250A7FF900282733 /* magic-squares-in-grid.swift in Sources */,
 				803E5B862504CFE20095A89F /* contains-duplicate-iii.swift in Sources */,
 				803E5B812504CFE20095A89F /* squares-of-a-sorted-array.swift in Sources */,
+				802D81AC250D07CC00282733 /* search-insert-position.swift in Sources */,
 				80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */,
 				803E5B2E2504CF4B0095A89F /* leetcodeApp.swift in Sources */,
 				803E5B8A2504CFE20095A89F /* remove-duplicates-from-sorted-array.swift in Sources */,
