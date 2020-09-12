@@ -22,6 +22,11 @@ https://leetcode-cn.com/problems/two-sum/
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+
+/**
+执行用时：4 ms, 在所有 C 提交中击败了99.55%的用户
+内存消耗：6 MB, 在所有 C 提交中击败了87.10%的用户
+*/
 int *twoSum(int *nums, int numsSize, int target, int *returnSize)
 {
     int *result = (int *)malloc(sizeof(int) * 2);
