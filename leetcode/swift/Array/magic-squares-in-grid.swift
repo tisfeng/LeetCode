@@ -6,18 +6,83 @@
 //
 
 import Foundation
+
 /**
-[[4,3,8,4,6,8],
- [9,5,1,9,2,5],
- [2,7,6,2,7,4],
- [3,5,1,2,8,7],
- [1,7,5,2,9,4]]
+ 执行用时：8 ms, 在所有 Swift 提交中击败了100.00%的用户
+ 内存消耗：13.7 MB, 在所有 Swift 提交中击败了100.00%的用户
 */
+class Solution {
+    func numMagicSquaresInside(_ grid: [[Int]]) -> Int {
+        var count = 0
+        let i_len = grid.count
+        let j_len = grid[0].count
+        if i_len < 3 || j_len < 3 {
+            return 0
+        }
+        for i in 0 ..< i_len - 2 {
+            for j in 0 ..< j_len - 2 {
+                let len = 3
+                var row_sum = 0, column_sum = 0
+                let targetSet: Set = [1,2,3,4,5,6,7,8,9]
+                var currentSet = Set<Int>()
+                var slash_sum1 = 0, slash_sum2 = 0
+                var equal = false
+                
+                for k in 0 ..< len {
+                    slash_sum1 += grid[i+k][j+k]
+                    slash_sum2 += grid[i+len-k-1][j+k]
+                }
+                print("slash_sum1: \(slash_sum1)")
+                print("slash_sum2: \(slash_sum2)")
+                if slash_sum1 != slash_sum2 {
+                    continue
+                }
+                
+                for row in 0 ..< len {
+                    var new_row_sum = 0, new_column_sum = 0
+                    for column in 0 ..< len {
+                        let num = grid[i+row][j+column]
+                        if num > 9 {
+                            continue
+                        }
+                        currentSet.insert(num)
+                        
+                        new_row_sum += grid[i+row][j+column]
+                        new_column_sum += grid[i+column][j+row]
+                    }
+                    
+                    if row == 0 {
+                        row_sum = new_row_sum
+                        column_sum = new_column_sum
+                    }
+                    
+                    print("new_row_sum: \(new_row_sum)")
+                    print("new_column_sum: \(new_column_sum)")
+                    if row_sum == new_row_sum  &&
+                        column_sum == new_column_sum &&
+                        row_sum == column_sum {
+                        equal = true
+                    } else {
+                        equal = false
+                    }
+                }
+                
+                if currentSet == targetSet && equal {
+                    count += 1
+                }
+               
+            }
+        }
+        
+        return count
+    }
+}
+
 /**
  执行用时：12 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：13.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class Solution_100 {
     func numMagicSquaresInside(_ grid: [[Int]]) -> Int {
         var count = 0
         let i_len = grid.count
