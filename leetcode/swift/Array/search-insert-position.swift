@@ -14,7 +14,7 @@ import Foundation
  untime: 44 ms, faster than 34.93% of Swift online submissions for Search Insert Position.
  Memory Usage: 20.6 MB, less than 93.49% of Swift online submissions for Search Insert Position.
 */
-class Solution {
+class SearchInsert {
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         var start = 0
         var end = nums.count - 1
