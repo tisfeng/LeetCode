@@ -39,7 +39,7 @@ class Solution : GuessGame {
         var start = 0
         var end = n
         var mid = (start + end) / 2
-
+    
         while guess(mid) != 0 {
             if end - start == 1 {
                 if guess(end) == 0 {
