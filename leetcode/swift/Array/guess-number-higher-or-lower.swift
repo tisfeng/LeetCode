@@ -34,7 +34,7 @@ class GuessGame {
 执行用时：4 ms, 在所有 Swift 提交中击败了72.73%的用户
 内存消耗：13.6 MB, 在所有 Swift 提交中击败了100.00%的用户
 */
-class Solution : GuessGame {
+class GuessNumber : GuessGame {
     func guessNumber(_ n: Int) -> Int {  // [1,2,3,4,5,6,7,8,9]
         var start = 0
         var end = n
