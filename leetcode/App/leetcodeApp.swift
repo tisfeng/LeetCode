@@ -16,9 +16,8 @@ struct leetcodeApp: App {
 //                let arr = [[3,2,9,2,7],[6,1,8,4,2],[7,5,3,2,7],[2,9,4,9,6],[4,3,8,2,5]]
 //                print(solution.numMagicSquaresInside(arr))
                 
-//                let guess = Solution()
-//                guess.target = 4
-//                print(guess.guessNumber(9))
+                let guess = Solution()
+                print(guess.getMoneyAmount(4))
                 
             }
         }
