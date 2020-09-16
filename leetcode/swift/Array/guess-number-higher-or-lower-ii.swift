@@ -10,6 +10,6 @@ import Foundation
 class Solution {
     func getMoneyAmount(_ n: Int) -> Int {
         
-        return 0
+        return 1
     }
 }
