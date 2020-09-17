@@ -10,7 +10,7 @@ import Foundation
 /**
 解答错误，貌似需要动态规划。。
 */
-class Solution {
+class GetMoneyAmount {
     func getMoneyAmount(_ n: Int) -> Int { // [1,2,3,4,5,6,7,8,9] 8 --> 5,7,9
         var money = 0
         var start = 1
