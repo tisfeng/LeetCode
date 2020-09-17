@@ -12,13 +12,9 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-//                let solution = MagicSquares()
-//                let arr = [[3,2,9,2,7],[6,1,8,4,2],[7,5,3,2,7],[2,9,4,9,6],[4,3,8,2,5]]
-//                print(solution.numMagicSquaresInside(arr))
-                
-                let guess = GetMoneyAmount()
-                print(guess.getMoneyAmount(4))
-                
+                let solution = Solution()
+                let arr = [1,2,3,3,3,5,6]
+                print(solution.findClosestElements(arr, 3, 3))
             }
         }
     }
