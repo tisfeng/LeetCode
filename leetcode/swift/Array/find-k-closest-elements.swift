@@ -14,24 +14,36 @@ class Solution {
         let len = arr.count
         
         var index = searchNumLastIndex(x, inArray: arr)
+        
+        var left = index
+        var right = index
+        
+        
         print("most close index: \(index)")
         
         if index >= 0 {
             array.append(index)
             count += 1
+            if left > 0 {
+                left -= 1
+            }
+            if right < len {
+                right += 1
+            }
         } else {
            index = -index
         }
         
-//        [1,2,3,3,3,5,6]
-        var left = index
-        var right = index
+//        [1,2,3,3,3,5,6]  (arr, 3, 3)
+
         while count < k {
+            print("left=\(left), right=\(right), count=\(count)")
+
             if count == 0 {
                 let current = arr[index]
                 if index < len {
                     let rightNum = arr[index + 1]
-                    if x - current < rightNum - x {
+                    if x - current <= rightNum - x {
                         array.append(index)
                     } else {
                         array.append(index + 1)
@@ -41,7 +53,7 @@ class Solution {
                 }
             }
             
-            if x - arr[left] < arr[right] - x {
+            if x - arr[left] <= arr[right] - x {
                 array.append(left)
                 if left > 0 {
                     left -= 1
@@ -61,8 +73,11 @@ class Solution {
     
     func searchNumLastIndex(_ num: Int, inArray sortedArr: [Int]) -> Int {
         let minIndex = searchNumFirstIndex(num, inArray: sortedArr)
-        var maxIndex = minIndex
+        if minIndex < 0 {
+            return minIndex
+        }
         
+        var maxIndex = minIndex
         for index in (minIndex..<sortedArr.count) {
             if sortedArr[index] == num {
                 maxIndex = index

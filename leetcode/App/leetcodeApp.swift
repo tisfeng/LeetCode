@@ -14,7 +14,7 @@ struct leetcodeApp: App {
             ContentView().onAppear {
                 let solution = Solution()
                 let arr = [1,2,3,3,3,5,6]
-                print(solution.findClosestElements(arr, 3, 3))
+                print(solution.findClosestElements(arr, 3, 4))
             }
         }
     }
