@@ -23,7 +23,7 @@ class Solution {
            index = -index
         }
         
-        
+//        [1,2,3,3,3,5,6]
         var left = index
         var right = index
         while count < k {
@@ -93,6 +93,7 @@ class Solution {
         
         while sortedArr[middle] != num {
             middle = (start + end) / 2
+            print("start=\(start), end=\(end), mid=\(middle)")
             if end - start == 1 {
                 if num == sortedArr[start] {
                     return start
