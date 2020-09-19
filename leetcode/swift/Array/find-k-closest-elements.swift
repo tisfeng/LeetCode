@@ -8,58 +8,55 @@
 import Foundation
 
 /**
- 执行用时：508 ms, 在所有 Swift 提交中击败了7.69%的用户
+ 执行用时：428 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：14.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
 class Solution {
     func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         var array = [Int]() // 记录最接近元素的index
-        var a = Array(repeating: 0, count: k)
-        var count = 0
+        var index = 0
         let len = arr.count
-        var index = searchNumLastIndex(x, inArray: arr)
-        // print("most close index: \(index)")
-
-        var left = index
-        var right = index
-        if index >= 0 {
-            array.append(index)
-            count += 1
+        var mostClosestIndex = searchNumLastIndex(x, inArray: arr)
+        
+        var left = mostClosestIndex
+        var right = mostClosestIndex
+        if mostClosestIndex >= 0 {
+            array.append(mostClosestIndex)
+            index += 1
             if left >= 0 { left -= 1 }
             if right < len { right += 1 }
         } else { //不存在 x元素
-           index = -index
-            left = index
-            right = index + 1
+            mostClosestIndex = -mostClosestIndex
+            left = mostClosestIndex
+            right = mostClosestIndex + 1
         }
-
-        while count < k { // [0,1,1,1,2,3,6,7,8,9]
-            
-            // print("left=\(left), right=\(right), array=\(array)")
+        
+        while index < k { // [0,1,1,1,2,3,6,7,8,9]
+            //  print("left=\(left), right=\(right), array=\(array)")
             if left < 0 {
                 array.append(right)
                 right += 1
-                count += 1
+                index += 1
                 continue
             }
             if right >= len {
-                array.append(left)
+                array.insert(left, at: 0)
                 left -= 1
-                count += 1
+                index += 1
                 continue
             }
             
             if x - arr[left] <= arr[right] - x {
-                array.append(left)
+                array.insert(left, at: 0)
                 left -= 1
             } else {
                 array.append(right)
                 right += 1
             }
-            count += 1
+            index += 1
         }
-
-        return array.sorted().map { index in
+            
+        return array.map { index in
             arr[index]
         }
     }

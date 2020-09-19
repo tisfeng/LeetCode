@@ -13,8 +13,8 @@ struct leetcodeApp: App {
         WindowGroup {
             ContentView().onAppear {
                 let solution = Solution()
-                let arr = [0,1,2,2,2,3,6,8,8,9]
-                print(solution.findClosestElements(arr, 5, 9))
+                let arr = [1,2,3,4,5]
+                print(solution.findClosestElements(arr, 4, 3))
             }
         }
     }
