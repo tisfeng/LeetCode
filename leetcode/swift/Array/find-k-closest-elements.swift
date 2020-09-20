@@ -15,7 +15,6 @@ class Solution {
     func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         var array = [Int]() // 记录最接近元素的index
         var count = 0
-        let len = arr.count
         var index = searchNumLastIndex(x, inArray: arr)
         
         var left = index
@@ -39,7 +38,7 @@ class Solution {
                 count += 1
                 continue
             }
-            if right >= len {
+            if right >= arr.count {
                 array.insert(left, at: 0)
                 left -= 1
                 count += 1
