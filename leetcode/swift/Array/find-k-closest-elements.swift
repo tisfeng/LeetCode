@@ -11,7 +11,7 @@ import Foundation
  执行用时：428 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：14.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class FindClosestElements {
     func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
         var array = [Int]() // 记录最接近元素的index
         var count = 0

@@ -41,6 +41,7 @@
 		803E5B882504CFE20095A89F /* merge-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B702504CFE10095A89F /* merge-sorted-array.swift */; };
 		803E5B892504CFE20095A89F /* contains-duplicate-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */; };
 		803E5B8A2504CFE20095A89F /* remove-duplicates-from-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */; };
+		8041C9872516E53500EC7C62 /* maximum-subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041C9862516E53500EC7C62 /* maximum-subarray.swift */; };
 		806A983B251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A983A251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift */; };
 		806A983D2513AE4700F55AE9 /* find-k-closest-elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */; };
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
@@ -105,6 +106,7 @@
 		803E5B702504CFE10095A89F /* merge-sorted-array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "merge-sorted-array.swift"; sourceTree = "<group>"; };
 		803E5B712504CFE10095A89F /* contains-duplicate-ii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "contains-duplicate-ii.swift"; sourceTree = "<group>"; };
 		803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "remove-duplicates-from-sorted-array.swift"; sourceTree = "<group>"; };
+		8041C9862516E53500EC7C62 /* maximum-subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "maximum-subarray.swift"; sourceTree = "<group>"; };
 		806A983A251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "guess-number-higher-or-lower-ii.swift"; sourceTree = "<group>"; };
 		806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "find-k-closest-elements.swift"; sourceTree = "<group>"; };
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				802D81AF250DFE4500282733 /* guess-number-higher-or-lower.swift */,
 				806A983A251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift */,
 				806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */,
+				8041C9862516E53500EC7C62 /* maximum-subarray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				803E5B7E2504CFE20095A89F /* 4sum.swift in Sources */,
 				803E5B302504CF4B0095A89F /* ContentView.swift in Sources */,
 				803E5B7F2504CFE20095A89F /* find-majority-element-lcci.swift in Sources */,
+				8041C9872516E53500EC7C62 /* maximum-subarray.swift in Sources */,
 				803E5B842504CFE20095A89F /* three-consecutive-odds.swift in Sources */,
 				806A983B251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift in Sources */,
 				803E5B762504CFE20095A89F /* reverse-linked-list.c in Sources */,
