@@ -226,11 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				803E5B632504CFE10095A89F /* can-place-flowers.swift */,
-				803E5B642504CFE10095A89F /* 4sum-ii.swift */,
-				803E5B652504CFE10095A89F /* two-sum.swift */,
-				803E5B662504CFE10095A89F /* 4sum.swift */,
 				803E5B672504CFE10095A89F /* find-majority-element-lcci.swift */,
-				803E5B682504CFE10095A89F /* 3sum.swift */,
 				803E5B692504CFE10095A89F /* squares-of-a-sorted-array.swift */,
 				803E5B6A2504CFE10095A89F /* contains-duplicate.swift */,
 				803E5B6B2504CFE10095A89F /* move-zeroes.swift */,
@@ -270,6 +266,10 @@
 		80A53B43251A41CE000DBA5A /* Two-Pointers */ = {
 			isa = PBXGroup;
 			children = (
+				803E5B652504CFE10095A89F /* two-sum.swift */,
+				803E5B682504CFE10095A89F /* 3sum.swift */,
+				803E5B662504CFE10095A89F /* 4sum.swift */,
+				803E5B642504CFE10095A89F /* 4sum-ii.swift */,
 			);
 			path = "Two-Pointers";
 			sourceTree = "<group>";
