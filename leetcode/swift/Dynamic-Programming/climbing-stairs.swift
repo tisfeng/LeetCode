@@ -56,3 +56,13 @@ class ClimbStairs_75 {
         return count
     }
 }
+
+
+class Solution0 {
+    func climbStairs(_ n: Int) -> Int {
+        if n <= 2 {
+            return n
+        }
+        return climbStairs(n - 1) + climbStairs(n - 2)
+    }
+}
