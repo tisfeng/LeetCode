@@ -46,6 +46,7 @@
 		806A983D2513AE4700F55AE9 /* find-k-closest-elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */; };
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
+		80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914CC254AF68900010D20 /* climbing-stairs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "find-k-closest-elements.swift"; sourceTree = "<group>"; };
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		80E914CC254AF68900010D20 /* climbing-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climbing-stairs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		80A53B42251A410D000DBA5A /* Dynamic-Programming */ = {
 			isa = PBXGroup;
 			children = (
+				80E914CC254AF68900010D20 /* climbing-stairs.swift */,
 			);
 			path = "Dynamic-Programming";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				806A983D2513AE4700F55AE9 /* find-k-closest-elements.swift in Sources */,
 				803E5B882504CFE20095A89F /* merge-sorted-array.swift in Sources */,
 				803E5B7A2504CFE20095A89F /* median-of-two-sorted-arrays.c in Sources */,
+				80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */,
 				803E5B872504CFE20095A89F /* maximum-product-of-three-numbers.swift in Sources */,
 				803E5B892504CFE20095A89F /* contains-duplicate-ii.swift in Sources */,
 				803E5B852504CFE20095A89F /* remove-element.swift in Sources */,

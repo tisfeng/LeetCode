@@ -12,9 +12,14 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-                let solution = Solution()
-                let arr = [-2,1,-3,4,-1,2,1,-5,4]
-                print(solution.maxSubArray(arr))
+//                let solution = Solution()
+//                let arr = [-2,1,-3,4,-1,2,1,-5,4]
+//                print(solution.maxSubArray(arr))
+                
+                let solution = ClimbStairs()
+            
+                print(solution.climbStairs(40))
+                
             }
         }
     }
