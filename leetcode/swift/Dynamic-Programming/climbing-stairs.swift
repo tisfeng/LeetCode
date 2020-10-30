@@ -25,10 +25,35 @@ class ClimbStairs {
             return arr[n]
         }
         
-        let count = climbStairs(n - 1) + climbStairs(n - 2)
-        arr[n] = count
-        print("arr[\(n)] = \(arr[n])")
-        return count
+        arr[n] = climbStairs(n - 1) + climbStairs(n - 2)
+        return arr[n]
+    }
+}
+
+
+/**
+ 递归，内部函数
+ 
+ 执行用时：4 ms, 在所有 Swift 提交中击败了74.77%的用户
+ 内存消耗：13.3 MB, 在所有 Swift 提交中击败了64.26%的用户
+ */
+class ClimbStairs_74 {
+    func climbStairs(_ n: Int) -> Int {
+        var cache = [Int](repeating: 0, count: n + 1)
+        
+        func dfs(_ n: Int) -> Int {
+            if cache[n] != 0 {
+                return cache[n]
+            }
+            if n <= 2 {
+                return n
+            }
+            cache[n] = dfs(n - 1) +  dfs(n - 2)
+            
+            return cache[n]
+        }
+        
+        return dfs(n)
     }
 }
 
@@ -58,6 +83,9 @@ class ClimbStairs_75 {
 }
 
 
+/**
+ 直接递归，超时
+ */
 class Solution0 {
     func climbStairs(_ n: Int) -> Int {
         if n <= 2 {
