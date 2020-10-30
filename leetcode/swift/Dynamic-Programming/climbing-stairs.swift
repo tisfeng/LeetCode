@@ -8,12 +8,33 @@
 import Foundation
 
 /**
+ 1,1,2,3,5,8,11
+ 滚动数组，循环
+ 
+ 执行用时：4 ms, 在所有 Swift 提交中击败了74.77%的用户
+ 内存消耗：13.3 MB, 在所有 Swift 提交中击败了61.37%的用户
+ */
+class ClimbStairs {
+    func climbStairs(_ n: Int) -> Int {
+        var p = 1, q = 1, r = p
+        for i in 2...n {
+            r = p + q
+            p = q
+            q = r
+            print("i = \(i), r = \(r)")
+        }
+        return r
+    }
+}
+
+
+/**
  递归，数组保存
  
  执行用时：4 ms, 在所有 Swift 提交中击败了75.39%的用户
  内存消耗：13.4 MB, 在所有 Swift 提交中击败了56.93%的用户
  */
-class ClimbStairs {
+class ClimbStairs_76 {
     var arr = Array(repeating: 0, count: 100)
     func climbStairs(_ n: Int) -> Int {
         if n < 3 {
