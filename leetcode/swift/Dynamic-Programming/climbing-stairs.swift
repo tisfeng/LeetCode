@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 /**
 0,1,1,2,3,5,8,11
  滚动数组，循环
@@ -50,6 +51,26 @@ class ClimbStairs_76 {
         return arr[n]
     }
 }
+
+
+/** 1,1,2,3,5,8,11
+ 数学通项公式求解（注意，斐波那契数列, n + 1）
+ 
+ 执行用时：4 ms, 在所有 Swift 提交中击败了74.19%的用户
+ 内存消耗：13.4 MB, 在所有 Swift 提交中击败了57.76%的用户
+ */
+class ClimbStairs_72 {
+    func climbStairs(_ n: Int) -> Int {
+        let sqrt5 = sqrt(5)
+        let fibn = pow((1 + sqrt5) / 2, Double(n + 1)) -
+            pow((1 - sqrt5) / 2, Double(n + 1))
+        
+        return Int(fibn / sqrt5)
+    }
+}
+
+
+
 
 
 /**
