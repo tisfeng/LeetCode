@@ -47,6 +47,7 @@
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
 		80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914CC254AF68900010D20 /* climbing-stairs.swift */; };
+		80E914D2254DB38B00010D20 /* fibonacci-number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914D1254DB38B00010D20 /* fibonacci-number.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		80E914CC254AF68900010D20 /* climbing-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climbing-stairs.swift"; sourceTree = "<group>"; };
+		80E914D1254DB38B00010D20 /* fibonacci-number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fibonacci-number.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				803E5B722504CFE10095A89F /* remove-duplicates-from-sorted-array.swift */,
 				80D404782507D98E0090F56C /* flipping-an-image.swift */,
 				802D81A9250A7FF900282733 /* magic-squares-in-grid.swift */,
+				80E914D1254DB38B00010D20 /* fibonacci-number.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				802D81AC250D07CC00282733 /* search-insert-position.swift in Sources */,
 				80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */,
 				803E5B2E2504CF4B0095A89F /* leetcodeApp.swift in Sources */,
+				80E914D2254DB38B00010D20 /* fibonacci-number.swift in Sources */,
 				803E5B8A2504CFE20095A89F /* remove-duplicates-from-sorted-array.swift in Sources */,
 				803E5B7C2504CFE20095A89F /* 4sum-ii.swift in Sources */,
 				803E5B732504CFE20095A89F /* reverse-nodes-in-k-group.c in Sources */,
