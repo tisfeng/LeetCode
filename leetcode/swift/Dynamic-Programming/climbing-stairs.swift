@@ -8,7 +8,7 @@
 import Foundation
 
 /**
- 1,1,2,3,5,8,11
+0,1,1,2,3,5,8,11
  滚动数组，循环
  
  执行用时：4 ms, 在所有 Swift 提交中击败了74.77%的用户
@@ -16,8 +16,8 @@ import Foundation
  */
 class ClimbStairs {
     func climbStairs(_ n: Int) -> Int {
-        var p = 1, q = 1, r = p
-        for i in 2...n {
+        var p = 0, q = 1, r = 1
+        for i in 1...n {
             r = p + q
             p = q
             q = r
