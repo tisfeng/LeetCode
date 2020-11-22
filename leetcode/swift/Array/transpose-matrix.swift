@@ -35,6 +35,10 @@ import Foundation
  */
 
 
+/**
+ 执行用时：116 ms, 在所有 Swift 提交中击败了100.00%的用户
+ 内存消耗：13.8 MB, 在所有 Swift 提交中击败了59.46%的用户
+ */
 class Solution {
     func transpose(_ A: [[Int]]) -> [[Int]] {
         let row = A.count
@@ -45,11 +49,8 @@ class Solution {
         for i in 0..<row {
             for j in 0..<column {
                 a[j][i] = A[i][j]
-                
-                print("\(a[j][i])")
             }
         }
-        
         
         return a
     }
