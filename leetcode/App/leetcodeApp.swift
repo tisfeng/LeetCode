@@ -16,9 +16,9 @@ struct leetcodeApp: App {
 //                let arr = [-2,1,-3,4,-1,2,1,-5,4]
 //                print(solution.maxSubArray(arr))
                 
-                let solution = Fib()
+                let solution = Solution()
             
-                print(solution.fib(40))
+                print(solution.transpose([[1,2,3],[4,5,6],[7,8,9]]))
                 
             }
         }

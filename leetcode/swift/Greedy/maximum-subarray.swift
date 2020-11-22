@@ -8,6 +8,7 @@
 import Foundation
 
 /**
+ 53. 最大子序和
  https://leetcode-cn.com/problems/maximum-subarray/
  
  给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
@@ -20,7 +21,7 @@ import Foundation
  执行用时：40 ms, 在所有 Swift 提交中击败了98.67%的用户
  内存消耗：13.2 MB, 在所有 Swift 提交中击败了97.38%的用户
  */
-class Solution {
+class MaxSubArray {
     func maxSubArray(_ nums: [Int]) -> Int { //[-2,1,-3,4,-1,2,1,-5,4]
         var maxSum = Int.min
         var currentSum = maxSum
