@@ -16,15 +16,11 @@ import Foundation
 
 /**
  执行用时：4 ms, 在所有 Swift 提交中击败了100.00%的用户
- 内存消耗：13.7 MB, 在所有 Swift 提交中击败了50.00%的用户
+ 内存消耗：13.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
 class Solution {
     func summaryRanges(_ nums: [Int]) -> [String] {
         let len = nums.count
-        if len == 0 {
-            return []
-        }
-        
         var arr = [String]()
         var index = 0
         
