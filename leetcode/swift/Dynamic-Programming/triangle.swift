@@ -31,7 +31,7 @@ import Foundation
  动态规划：-1，3，3 = -1
  
  */
-class Solution {
+class MinimumTotal {
     func minimumTotal(_ triangle: [[Int]]) -> Int {
         var sum = 0
         var minIdx = 0
