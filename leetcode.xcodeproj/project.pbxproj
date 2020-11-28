@@ -255,7 +255,6 @@
 				80C23896256A678000A173B1 /* transpose-matrix.swift */,
 				80C5983A2571F11700CD7629 /* sum-of-all-odd-length-subarrays.swift */,
 				80C5983F2571FBAD00CD7629 /* summary-ranges.swift */,
-				80C59844257248B900CD7629 /* triangle.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -277,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				80E914CC254AF68900010D20 /* climbing-stairs.swift */,
+				80C59844257248B900CD7629 /* triangle.swift */,
 			);
 			path = "Dynamic-Programming";
 			sourceTree = "<group>";
