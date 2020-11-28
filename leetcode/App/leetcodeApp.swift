@@ -12,12 +12,9 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-//                let solution = Solution()
-//                let arr = [-2,1,-3,4,-1,2,1,-5,4]
-//                print(solution.maxSubArray(arr))
-                
-//                let solution = Solution()
-            
+                let solution = Solution()
+                let arr = [1,0,0,0]
+                print(solution.maxDistToClosest(arr))           
                 
             }
         }
