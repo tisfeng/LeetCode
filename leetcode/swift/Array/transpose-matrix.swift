@@ -39,7 +39,7 @@ import Foundation
  执行用时：116 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：13.8 MB, 在所有 Swift 提交中击败了59.46%的用户
  */
-class Solution {
+class Transpose {
     func transpose(_ A: [[Int]]) -> [[Int]] {
         let row = A.count
         let column = A[0].count
