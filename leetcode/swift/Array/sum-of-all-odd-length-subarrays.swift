@@ -36,7 +36,7 @@ import Foundation
  执行用时：28 ms, 在所有 Swift 提交中击败了40.54%的用户
  内存消耗：13.5 MB, 在所有 Swift 提交中击败了35.14%的用户
  */
-class Solution {
+class SumOddLengthSubarrays {
     func sumOddLengthSubarrays(_ arr: [Int]) -> Int {
         var sum = 0
         let len = arr.count
