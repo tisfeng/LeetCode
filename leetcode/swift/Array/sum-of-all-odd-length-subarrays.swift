@@ -31,6 +31,11 @@ import Foundation
  [1,4,2,5,3] = 15
  我们将所有值求和得到 1 + 4 + 2 + 5 + 3 + 7 + 11 + 10 + 15 = 58
  */
+
+/**
+ 执行用时：28 ms, 在所有 Swift 提交中击败了40.54%的用户
+ 内存消耗：13.5 MB, 在所有 Swift 提交中击败了35.14%的用户
+ */
 class Solution {
     func sumOddLengthSubarrays(_ arr: [Int]) -> Int {
         var sum = 0
