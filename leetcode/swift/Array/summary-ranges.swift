@@ -25,12 +25,10 @@ class Solution {
         var index = 0
         
         while index < len {
-//            print("index: \(index)")
             let start = index
             while index < len - 1 && nums[index] + 1 == nums[index + 1] {
                 index += 1
             }
-//            print("index: \(index)")
             
             if index == start {
                 arr.append("\(nums[start])")
@@ -38,7 +36,6 @@ class Solution {
                 arr.append("\(nums[start])" + "->" + "\(nums[index])")
             }
             index += 1
-//            print("arr: \(arr), index: \(index)")
         }
         
         return arr
