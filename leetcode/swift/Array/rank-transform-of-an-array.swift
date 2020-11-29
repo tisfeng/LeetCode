@@ -24,7 +24,7 @@ class Solution {
 //        print("arr: \(arr)")
 //        print("sorted: \(arr.sorted())")
 
-        let uniqueSortedArr = arr.unique.sorted()
+        let uniqueSortedArr = Array(Set(arr)).sorted()  //arr.unique.sorted()
         for i in 0..<len {
             let index = uniqueSortedArr.firstIndex(of: arr[i])!
             indexArr[i] = index + 1
