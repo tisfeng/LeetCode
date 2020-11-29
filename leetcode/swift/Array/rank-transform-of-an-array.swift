@@ -16,10 +16,6 @@ import Foundation
 
  */
 
-
-/**
- 超时
- */
 class Solution {
     func arrayRankTransform(_ arr: [Int]) -> [Int] {
         let len = arr.count
@@ -27,9 +23,10 @@ class Solution {
         
 //        print("arr: \(arr)")
 //        print("sorted: \(arr.sorted())")
-                    
+
+        let uniqueSortedArr = arr.sorted().unique
         for i in 0..<len {
-            let index = arr.sorted().unique.firstIndex(of: arr[i])!
+            let index = uniqueSortedArr.firstIndex(of: arr[i])!
             indexArr[i] = index + 1
         }
         
