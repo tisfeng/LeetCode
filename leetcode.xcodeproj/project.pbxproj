@@ -49,6 +49,7 @@
 		80C598402571FBAD00CD7629 /* summary-ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5983F2571FBAD00CD7629 /* summary-ranges.swift */; };
 		80C59845257248B900CD7629 /* triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C59844257248B900CD7629 /* triangle.swift */; };
 		80C5984A2572517100CD7629 /* maximize-distance-to-closest-person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C598492572517100CD7629 /* maximize-distance-to-closest-person.swift */; };
+		80C598582573430000CD7629 /* rank-transform-of-an-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C598572573430000CD7629 /* rank-transform-of-an-array.swift */; };
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
 		80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914CC254AF68900010D20 /* climbing-stairs.swift */; };
@@ -121,6 +122,7 @@
 		80C5983F2571FBAD00CD7629 /* summary-ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "summary-ranges.swift"; sourceTree = "<group>"; };
 		80C59844257248B900CD7629 /* triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triangle.swift; sourceTree = "<group>"; };
 		80C598492572517100CD7629 /* maximize-distance-to-closest-person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "maximize-distance-to-closest-person.swift"; sourceTree = "<group>"; };
+		80C598572573430000CD7629 /* rank-transform-of-an-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rank-transform-of-an-array.swift"; sourceTree = "<group>"; };
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		80E914CC254AF68900010D20 /* climbing-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climbing-stairs.swift"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				80C5983A2571F11700CD7629 /* sum-of-all-odd-length-subarrays.swift */,
 				80C5983F2571FBAD00CD7629 /* summary-ranges.swift */,
 				80C598492572517100CD7629 /* maximize-distance-to-closest-person.swift */,
+				80C598572573430000CD7629 /* rank-transform-of-an-array.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				803E5B792504CFE20095A89F /* merge-two-sorted-lists.c in Sources */,
 				803E5B772504CFE20095A89F /* sort-list.c in Sources */,
 				803E5B752504CFE20095A89F /* two-sum.c in Sources */,
+				80C598582573430000CD7629 /* rank-transform-of-an-array.swift in Sources */,
 				803E5B822504CFE20095A89F /* contains-duplicate.swift in Sources */,
 				803E5B802504CFE20095A89F /* 3sum.swift in Sources */,
 				803E5B7B2504CFE20095A89F /* can-place-flowers.swift in Sources */,

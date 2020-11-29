@@ -14,7 +14,7 @@ struct leetcodeApp: App {
             ContentView().onAppear {
                 let solution = Solution()
                 let arr = [1,0,0,0]
-                print(solution.maxDistToClosest(arr))           
+                print(solution.arrayRankTransform(arr))           
                 
             }
         }

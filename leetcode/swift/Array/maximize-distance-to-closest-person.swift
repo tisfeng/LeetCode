@@ -19,7 +19,7 @@ import Foundation
  执行用时：96 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：14.2 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class MaxDistToClosest {
     func maxDistToClosest(_ seats: [Int]) -> Int {
         let len = seats.count
         var count = 0
