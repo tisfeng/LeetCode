@@ -30,16 +30,15 @@ import Foundation
  1. 将数组排序；
  2. 遍历，将元素逐个和之前的元素比较，保证新的数组元素递增。
  
- 执行用时：652 ms, 在所有 Swift 提交中击败了100.00%的用户
+ 执行用时：656 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：15.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class MinIncrementForUnique {
     func minIncrementForUnique(_ A: [Int]) -> Int {
         var sortedA = A.sorted()
-        let len = A.count
         var increment = 0
         
-        for i in 0..<len {
+        for i in 0..<A.count {
             if i > 0 && sortedA[i] <= sortedA[i-1] {
                 let old = sortedA[i]
                 sortedA[i] = sortedA[i-1] + 1

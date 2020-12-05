@@ -44,6 +44,7 @@
 		8041C9872516E53500EC7C62 /* maximum-subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041C9862516E53500EC7C62 /* maximum-subarray.swift */; };
 		80637451257B32AE00F9779D /* richest-customer-wealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80637450257B32AE00F9779D /* richest-customer-wealth.swift */; };
 		80637456257B90FD00F9779D /* minimum-increment-to-make-array-unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80637455257B90FD00F9779D /* minimum-increment-to-make-array-unique.swift */; };
+		8063745B257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8063745A257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift */; };
 		806A983B251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A983A251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift */; };
 		806A983D2513AE4700F55AE9 /* find-k-closest-elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */; };
 		80C23897256A678000A173B1 /* transpose-matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C23896256A678000A173B1 /* transpose-matrix.swift */; };
@@ -119,6 +120,7 @@
 		8041C9862516E53500EC7C62 /* maximum-subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "maximum-subarray.swift"; sourceTree = "<group>"; };
 		80637450257B32AE00F9779D /* richest-customer-wealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "richest-customer-wealth.swift"; sourceTree = "<group>"; };
 		80637455257B90FD00F9779D /* minimum-increment-to-make-array-unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "minimum-increment-to-make-array-unique.swift"; sourceTree = "<group>"; };
+		8063745A257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "find-words-that-can-be-formed-by-characters.swift"; sourceTree = "<group>"; };
 		806A983A251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "guess-number-higher-or-lower-ii.swift"; sourceTree = "<group>"; };
 		806A983C2513AE4700F55AE9 /* find-k-closest-elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "find-k-closest-elements.swift"; sourceTree = "<group>"; };
 		80C23896256A678000A173B1 /* transpose-matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "transpose-matrix.swift"; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				80C598572573430000CD7629 /* rank-transform-of-an-array.swift */,
 				80637450257B32AE00F9779D /* richest-customer-wealth.swift */,
 				80637455257B90FD00F9779D /* minimum-increment-to-make-array-unique.swift */,
+				8063745A257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				80C5983B2571F11700CD7629 /* sum-of-all-odd-length-subarrays.swift in Sources */,
 				803E5B7A2504CFE20095A89F /* median-of-two-sorted-arrays.c in Sources */,
 				80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */,
+				8063745B257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift in Sources */,
 				803E5B872504CFE20095A89F /* maximum-product-of-three-numbers.swift in Sources */,
 				803E5B892504CFE20095A89F /* contains-duplicate-ii.swift in Sources */,
 				803E5B852504CFE20095A89F /* remove-element.swift in Sources */,
