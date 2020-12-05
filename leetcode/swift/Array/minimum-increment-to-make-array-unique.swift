@@ -19,29 +19,36 @@ import Foundation
 
 /**
  超时
+ 
+ 改：
+ 思路：先从大的元素，开始递增，减少碰撞
  */
 class Solution {
     func minIncrementForUnique(_ A: [Int]) -> Int {
+//        print("\(A)")
+//        let A = A.sorted()
+//        print("\(A)")
+        
         let len = A.count
         var map = [Int: Int]()
         var increment = 0
         for i in 0..<len {
-            var value = A[i]
+            let value = A[i]
             if map[A[i]] == nil {
                 map[value] = i
 //                print("push \(value)")
             } else {
-                var k = 0
+                var new = value
                 repeat {
-                    value += 1
-                    k += 1
-                } while map[value] != nil
+                    new += 1
+                } while map[new] != nil
                 
-                map[value] = i
-                increment += k
-//                print("increase \(k), push \(value)")
+                map[new] = i
+                increment += new - value
+//                print("increase \(new - value), push \(new)")
             }
         }
+//        print("map: \(map)")
         
         return increment
     }
