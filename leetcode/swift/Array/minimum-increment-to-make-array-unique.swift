@@ -15,20 +15,48 @@ import Foundation
  
  输入：[3,2,1,2,1,7]
  输出：6
+ 
+ [3,2,1,2,1,7]
+ 
+ [1,1,2,2,3,7]
+ 
+ [1,2,3,4,5,7]
  */
 
+
 /**
- 超时
+ 思路:
  
- 改：
- 思路：先从大的元素，开始递增，减少碰撞
+ 1. 将数组排序；
+ 2. 遍历，将元素逐个和之前的元素比较，保证新的数组元素递增。
+ 
+ 执行用时：652 ms, 在所有 Swift 提交中击败了100.00%的用户
+ 内存消耗：15.4 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
 class Solution {
     func minIncrementForUnique(_ A: [Int]) -> Int {
-//        print("\(A)")
-//        let A = A.sorted()
-//        print("\(A)")
+        var sortedA = A.sorted()
+        let len = A.count
+        var increment = 0
         
+        for i in 0..<len {
+            if i > 0 && sortedA[i] <= sortedA[i-1] {
+                let old = sortedA[i]
+                sortedA[i] = sortedA[i-1] + 1
+                increment += sortedA[i] - old
+            }
+        }
+        
+        return increment
+    }
+}
+
+
+/**
+ 超时
+ */
+class Solution_00 {
+    func minIncrementForUnique(_ A: [Int]) -> Int {
         let len = A.count
         var map = [Int: Int]()
         var increment = 0
@@ -36,7 +64,6 @@ class Solution {
             let value = A[i]
             if map[A[i]] == nil {
                 map[value] = i
-//                print("push \(value)")
             } else {
                 var new = value
                 repeat {
@@ -45,10 +72,8 @@ class Solution {
                 
                 map[new] = i
                 increment += new - value
-//                print("increase \(new - value), push \(new)")
             }
         }
-//        print("map: \(map)")
         
         return increment
     }
