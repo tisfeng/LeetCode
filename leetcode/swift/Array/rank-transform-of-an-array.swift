@@ -23,7 +23,7 @@ import Foundation
  执行用时：720 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：24.1 MB, 在所有 Swift 提交中击败了33.33%的用户
  */
-class Solution {
+class ArrayRankTransform {
     func arrayRankTransform(_ arr: [Int]) -> [Int] {
         //初始化一个字典用来存储排序后原数组的元素和序号
         var map = [Int: Int]()
