@@ -12,8 +12,8 @@ struct leetcodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-                let solution = Solution()
-                let arr = [1,0,0,0]
+//                let solution = Solution()
+//                let arr = [1,0,0,0]
 //                print(solution.arrayRankTransform(arr))           
                 
             }
