@@ -17,7 +17,6 @@ import Foundation
  可以形成字符串 "cat"，所以答案是 3
  */
 
-
 /**
  执行用时：1004 ms, 在所有 Swift 提交中击败了9.09%的用户
  内存消耗：14.1 MB, 在所有 Swift 提交中击败了72.73%的用户
@@ -34,13 +33,17 @@ class Solution {
                 map[char] = 1
             }
         }
-//        print("map: \(map)")
         
         for i in 0..<words.count {
             let word = words[i]
             var k = 0
             var tempMap = map
 //            print("word: \(word)")
+            
+            if word.count > chars.count {
+                continue
+            }
+            
             for char in word {
                 let charCount = tempMap[char]
 //                print("char: \(char), charCount: \(charCount ?? 0)")
@@ -52,6 +55,9 @@ class Solution {
                         count += word.count
 //                        print("push word: \(word), count: \(count)\n")
                     }
+                } else {
+//                    print("continue, \(word)")
+                    continue;
                 }
             }
         }
