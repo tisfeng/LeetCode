@@ -11,17 +11,59 @@ import Foundation
 /**
  1160. 拼写单词 https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/
  
- 输入：words = ["cat","bt","hat","tree"], chars = "atach"
- 输出：6
+ 输入：words = ["cat","bt","hatt","tree"], chars = "atach"
+ 输出：3
  解释：
- 可以形成字符串 "cat" 和 "hat"，所以答案是 3 + 3 = 6。
+ 可以形成字符串 "cat"，所以答案是 3
  */
 
 
 /**
- 超时
+ 执行用时：1004 ms, 在所有 Swift 提交中击败了9.09%的用户
+ 内存消耗：14.1 MB, 在所有 Swift 提交中击败了72.73%的用户
  */
 class Solution {
+    func countCharacters(_ words: [String], _ chars: String) -> Int {
+        var count = 0
+        var map = [Character: Int]()
+        for char in chars {
+            let value = map[char]
+            if value != nil {
+                map[char] = value! + 1
+            } else {
+                map[char] = 1
+            }
+        }
+//        print("map: \(map)")
+        
+        for i in 0..<words.count {
+            let word = words[i]
+            var k = 0
+            var tempMap = map
+//            print("word: \(word)")
+            for char in word {
+                let charCount = tempMap[char]
+//                print("char: \(char), charCount: \(charCount ?? 0)")
+                if charCount != nil && charCount! > 0 {
+                    tempMap[char] = charCount! - 1
+                    k += 1
+//                    print("match: \(char), \(tempMap)")
+                    if k == word.count {
+                        count += word.count
+//                        print("push word: \(word), count: \(count)\n")
+                    }
+                }
+            }
+        }
+        
+        return count
+    }
+}
+
+/**
+ 超时，暴力遍历查找
+ */
+class CountCharacters_0 {
     func countCharacters(_ words: [String], _ chars: String) -> Int {
         var count = 0
         for i in 0..<words.count {
