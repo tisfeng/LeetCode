@@ -18,10 +18,63 @@ import Foundation
  */
 
 /**
+ 双哈希表，比对
+ 
  执行用时：280 ms, 在所有 Swift 提交中击败了36.36%的用户
  内存消耗：14.4 MB, 在所有 Swift 提交中击败了45.45%的用户
  */
 class Solution {
+    func countCharacters(_ words: [String], _ chars: String) -> Int {
+        var count = 0
+        let charsMap = mapFromChars(chars)
+        
+        for word in words {
+            if word.count > chars.count {
+//                print("contiune: \(word)")
+                continue
+            }
+            var canSpell = true
+            let wordMap = mapFromChars(word)
+            for key in wordMap.keys {
+//                print("for: \(word), \(key)")
+                if charsMap[key] == nil || charsMap[key]! < wordMap[key]! {
+//                    print("break: \(key), \(word)")
+                    canSpell = false
+                    break
+                }
+            }
+            if canSpell {
+                count += word.count
+//                print("push: \(word), \(count)")
+            }
+        }
+        
+        return count
+    }
+    
+    /// 获取字符串的哈希表
+    func mapFromChars(_ chars: String) -> [Character: Int] {
+        var charsMap = [Character: Int]()
+        for char in chars {
+            let value = charsMap[char]
+            if value != nil {
+                charsMap[char] = value! + 1
+            } else {
+                charsMap[char] = 1
+            }
+        }
+        
+        return charsMap
+    }
+}
+
+/**
+ 哈希表
+ 
+ 执行用时：280 ms, 在所有 Swift 提交中击败了36.36%的用户
+ 内存消耗：14.4 MB, 在所有 Swift 提交中击败了45.45%的用户
+ */
+class CountCharacters_36 {
     func countCharacters(_ words: [String], _ chars: String) -> Int {
         var count = 0
         var map = [Character: Int]()
@@ -34,29 +87,21 @@ class Solution {
             }
         }
         
-        for i in 0..<words.count {
-            let word = words[i]
-            var k = 0
-            var tempMap = map
-//            print("word: \(word)")
-            
+        for word in words {
             if word.count > chars.count {
                 continue
             }
-            
+            var k = 0
+            var tempMap = map
             for char in word {
                 let charCount = tempMap[char]
-//                print("char: \(char), charCount: \(charCount ?? 0)")
                 if charCount != nil && charCount! > 0 {
                     tempMap[char] = charCount! - 1
                     k += 1
-//                    print("match: \(char), \(tempMap)")
                     if k == word.count {
                         count += word.count
-//                        print("push word: \(word), count: \(count)\n")
                     }
                 } else {
-//                    print("continue, \(word)")
                     break;
                 }
             }
