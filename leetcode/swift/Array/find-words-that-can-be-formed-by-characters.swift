@@ -18,8 +18,8 @@ import Foundation
  */
 
 /**
- 执行用时：1004 ms, 在所有 Swift 提交中击败了9.09%的用户
- 内存消耗：14.1 MB, 在所有 Swift 提交中击败了72.73%的用户
+ 执行用时：280 ms, 在所有 Swift 提交中击败了36.36%的用户
+ 内存消耗：14.4 MB, 在所有 Swift 提交中击败了45.45%的用户
  */
 class Solution {
     func countCharacters(_ words: [String], _ chars: String) -> Int {
@@ -57,7 +57,7 @@ class Solution {
                     }
                 } else {
 //                    print("continue, \(word)")
-                    continue;
+                    break;
                 }
             }
         }
