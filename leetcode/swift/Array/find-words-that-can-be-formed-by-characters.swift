@@ -52,12 +52,7 @@ class Solution {
     func mapFromChars(_ chars: String) -> [Character: Int] {
         var charsMap = [Character: Int]()
         for char in chars {
-            let value = charsMap[char]
-            if value != nil {
-                charsMap[char] = value! + 1
-            } else {
-                charsMap[char] = 1
-            }
+            charsMap[char] = (charsMap[char] ?? 0) + 1
         }
         
         return charsMap
