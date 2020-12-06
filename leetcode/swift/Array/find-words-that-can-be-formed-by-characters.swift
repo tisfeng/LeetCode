@@ -20,8 +20,8 @@ import Foundation
 /**
  双哈希表，比对
  
- 执行用时：280 ms, 在所有 Swift 提交中击败了36.36%的用户
- 内存消耗：14.4 MB, 在所有 Swift 提交中击败了45.45%的用户
+ 执行用时：368 ms, 在所有 Swift 提交中击败了36.36%的用户
+ 内存消耗：14.2 MB, 在所有 Swift 提交中击败了63.64%的用户
  */
 class Solution {
     func countCharacters(_ words: [String], _ chars: String) -> Int {
@@ -30,22 +30,18 @@ class Solution {
         
         for word in words {
             if word.count > chars.count {
-//                print("contiune: \(word)")
                 continue
             }
             var canSpell = true
             let wordMap = mapFromChars(word)
             for key in wordMap.keys {
-//                print("for: \(word), \(key)")
                 if charsMap[key] == nil || charsMap[key]! < wordMap[key]! {
-//                    print("break: \(key), \(word)")
                     canSpell = false
                     break
                 }
             }
             if canSpell {
                 count += word.count
-//                print("push: \(word), \(count)")
             }
         }
         
@@ -103,29 +99,6 @@ class CountCharacters_36 {
                     }
                 } else {
                     break;
-                }
-            }
-        }
-        
-        return count
-    }
-}
-
-/**
- 超时，暴力遍历查找
- */
-class CountCharacters_0 {
-    func countCharacters(_ words: [String], _ chars: String) -> Int {
-        var count = 0
-        for i in 0..<words.count {
-            let word = words[i]
-            var k = 0
-            for char in word {
-                if chars.contains(char) {
-                    k += 1
-                    if k == word.count {
-                        count += word.count
-                    }
                 }
             }
         }
