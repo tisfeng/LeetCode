@@ -23,7 +23,7 @@ import Foundation
  执行用时：368 ms, 在所有 Swift 提交中击败了36.36%的用户
  内存消耗：14.2 MB, 在所有 Swift 提交中击败了63.64%的用户
  */
-class Solution {
+class CountCharacters {
     func countCharacters(_ words: [String], _ chars: String) -> Int {
         var count = 0
         let charsMap = mapFromChars(chars)
