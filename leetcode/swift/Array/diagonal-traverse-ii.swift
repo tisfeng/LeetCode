@@ -25,6 +25,12 @@ import Foundation
  [14,19,14,17,15],
  [8,19,11,3],
  [3,13,17,4]]
+ 
+ 
+ [
+ [14,12,19,16,9],
+ [13,14,15,8,11],
+ [11,13,1]]
 
  */
 class Solution {
@@ -63,7 +69,7 @@ class Solution {
         }
         
         maxRow = max(maxRow, lastColumCount)
-//        print("diagonalCount=\(diagonalCount), maxRow=\(maxRow)")
+        print("diagonalCount=\(diagonalCount), maxRow=\(maxRow)")
         
         // 打印右下区域 [2][0],[1][1],[0][2],  [2][1],[1][2]  [2,2]
         for index in 0..<diagonalCount { // 2,1,0
@@ -74,14 +80,21 @@ class Solution {
             while i >= 0 && j < maxRow {
                 if j < nums[i].count {
                     let a = nums[i][j]
-//                    print("push: num=\(a)")
+                    print("push: num=\(a)")
                     arr.append(a)
                 }
                 j += 1
                 i -= 1
-//                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
+                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
             }
         }
+   
+        /**
+         [
+         [14,12,19,16,9],
+         [13,14,15,8,11],
+         [11,13,1]]
+         */
         
 //        print("\narr: \(arr)")
         
