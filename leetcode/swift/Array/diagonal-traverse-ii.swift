@@ -64,7 +64,6 @@ class Solution {
         }
 //        print("\narr: \(arr)")
 
-        print("\(maxRow), \(lastColumCount) firstColumnCount: \(firstColumnCount)")
         
         var diagonalCount = lastColumCount
         
@@ -72,36 +71,47 @@ class Solution {
 //            diagonalCount = maxRow - firstRowCount
 //        }
         
-        if maxRow - maxRowIndex > lastColumCount {
-            diagonalCount = maxRow - maxRowIndex
-        }
+        diagonalCount = maxRow - (firstRowCount - maxRowIndex - 1) // 7-5-1
         
-        maxRow = max(maxRow, lastColumCount)
+        
+        print("\(maxRow), \(diagonalCount)")
+
+//        if maxRow - maxRowIndex > lastColumCount {
+//            diagonalCount = maxRow - maxRowIndex
+//        }
+        
+        diagonalCount = max(diagonalCount, lastColumCount)
         print("diagonalCount=\(diagonalCount), maxRow=\(maxRow)")
+        
+        maxRow = max(maxRow, diagonalCount)
         
         // 打印右下区域 [2][0],[1][1],[0][2],  [2][1],[1][2]  [2,2]
         for index in 0..<diagonalCount { // 2,1,0
             var i = firstRowCount - 1
             var j = index
             
-            print("i=\(i), j=\(j), count=\(nums[i].count)")
+//            print("i=\(i), j=\(j), count=\(nums[i].count)")
             while i >= 0 && j < maxRow {
                 if j < nums[i].count {
                     let a = nums[i][j]
-                    print("push: num=\(a)")
+//                    print("push: num=\(a)")
                     arr.append(a)
                 }
                 j += 1
                 i -= 1
-                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
+//                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
             }
         }
    
         /**
          [
-         [14,12,19,16,9],
-         [13,14,15,8,11],
-         [11,13,1]]
+         [1,36,9,7,4,20,1,7],
+         [11,27,7,38,32,17,13],
+         [35,16,7,7,21,13],
+         [5,40,27,37,26],
+         [12,17,2,3,17,9,6,4],
+         [29,5,19,37,4,7,34,32,9],
+         [13,34,20,24,32]]
          */
         
 //        print("\narr: \(arr)")
