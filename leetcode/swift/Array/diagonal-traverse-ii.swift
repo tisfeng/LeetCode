@@ -59,52 +59,30 @@ class Solution {
             while j <= index {
                 if j < nums[i].count {
                     let a = nums[i][j]
-//                    print("num[\(i)][\(j)]=\(a)")
                     arr.append(a)
                 }
                 j += 1
                 i -= 1
             }
         }
-//        print("\narr: \(arr)")
 
         maxDiagonalCount = max(maxDiagonalCount, lastColumCount)
         maxRow = max(maxRow, lastColumCount)
         //        print("diagonalCount=\(maxDiagonalCount), maxRow=\(maxRow)")
 
-        
         // 打印右下区域 [2][0],[1][1],[0][2],  [2][1],[1][2]  [2,2]
         for index in 0..<maxDiagonalCount { // 2,1,0
             var i = firstRowCount - 1
             var j = index
-            
-//            print("i=\(i), j=\(j), count=\(nums[i].count)")
             while i >= 0 && j < maxRow {
                 if j < nums[i].count {
                     let a = nums[i][j]
-//                    print("push: num=\(a)")
                     arr.append(a)
                 }
                 j += 1
                 i -= 1
-//                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
             }
         }
-   
-        /**
-         [
-         [35,20,24,2,14,16,20],
-         [27,25,2,36,23,31,10,1],
-         [31,23,8,26,27,16],
-         [26,30,35,17,13,12,12,14,34,20],
-         [30,20,36,27,1,2,27],
-         [32,24,2,29,3],
-         [39,14,28,8,8,9,29,30,20],
-         [30,13,39,16,8,21,2,5,3],
-         [7,14,28,18,3]]
-         */
-        
-//        print("\narr: \(arr)")
         
         return arr
     }
