@@ -27,6 +27,7 @@ import Foundation
  [3,13,17,4]]
  
  
+ [[14,12,19,16,9],[13,14,15,8,11],[11,13,1]]
  [
  [14,12,19,16,9],
  [13,14,15,8,11],
@@ -41,11 +42,12 @@ class Solution {
         let lastColumCount = nums[firstRowCount-1].count
         
         var maxRow = 0
-//        print("\(firstRowCount), \(lastColumCount) firstColumnCount: \(firstColumnCount)")
+        var maxRowIndex = 0
         // 打印左上区域
         for index in 0..<firstRowCount-1 {
-            if nums[index].count > maxRow {
+            if nums[index].count >= maxRow {
                 maxRow = nums[index].count
+                maxRowIndex = index
             }
             
             var i = index
@@ -62,10 +64,16 @@ class Solution {
         }
 //        print("\narr: \(arr)")
 
+        print("\(maxRow), \(lastColumCount) firstColumnCount: \(firstColumnCount)")
+        
         var diagonalCount = lastColumCount
         
-        if firstRowCount + lastColumCount < firstColumnCount {
-            diagonalCount = firstColumnCount - firstRowCount
+//        if firstRowCount + lastColumCount < maxRow {
+//            diagonalCount = maxRow - firstRowCount
+//        }
+        
+        if maxRow - maxRowIndex > lastColumCount {
+            diagonalCount = maxRow - maxRowIndex
         }
         
         maxRow = max(maxRow, lastColumCount)
