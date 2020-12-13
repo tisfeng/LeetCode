@@ -20,11 +20,11 @@ import Foundation
  输出：[1,6,2,8,7,3,9,4,12,10,5,13,11,14,15,16]
  
  [
- [1,2,3],
- [4],
- [5,6,7],
- [8],
- [9,10,11]]
+ [11,6,9,20],
+ [16,1,20],
+ [14,19,14,17,15],
+ [8,19,11,3],
+ [3,13,17,4]]
 
  */
 class Solution {
@@ -33,9 +33,15 @@ class Solution {
         let firstRowCount = nums.count
         let firstColumnCount = nums[0].count
         let lastColumCount = nums[firstRowCount-1].count
+        
+        var maxRow = 0
 //        print("\(firstRowCount), \(lastColumCount) firstColumnCount: \(firstColumnCount)")
         // 打印左上区域
         for index in 0..<firstRowCount-1 {
+            if nums[index].count > maxRow {
+                maxRow = nums[index].count
+            }
+            
             var i = index
             var j = 0
             while j <= index {
@@ -56,13 +62,11 @@ class Solution {
             diagonalCount = firstColumnCount - firstRowCount
         }
         
-        let maxRow = max(firstColumnCount, lastColumCount)
-        
+        maxRow = max(maxRow, lastColumCount)
 //        print("diagonalCount=\(diagonalCount), maxRow=\(maxRow)")
         
         // 打印右下区域 [2][0],[1][1],[0][2],  [2][1],[1][2]  [2,2]
         for index in 0..<diagonalCount { // 2,1,0
-        
             var i = firstRowCount - 1
             var j = index
             
@@ -70,16 +74,16 @@ class Solution {
             while i >= 0 && j < maxRow {
                 if j < nums[i].count {
                     let a = nums[i][j]
-                    print("push: num=\(a)")
+//                    print("push: num=\(a)")
                     arr.append(a)
                 }
                 j += 1
                 i -= 1
-                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
+//                print("--> i=\(i), j=\(j)") // count=\(nums[i].count)
             }
         }
         
-        print("\narr: \(arr)")
+//        print("\narr: \(arr)")
         
         return arr
     }
