@@ -92,7 +92,7 @@ class FindDiagonalOrder_0 {
  执行用时：1440 ms, 在所有 Swift 提交中击败了50.00%的用户
  内存消耗：24.9 MB, 在所有 Swift 提交中击败了100.00%的用户
  */
-class Solution {
+class FindDiagonalOrder_50 {
     typealias NumberInfo = (r:Int,c:Int,val:Int)
     func findDiagonalOrder(_ nums: [[Int]]) -> [Int] {
         guard nums.count > 1 else {
