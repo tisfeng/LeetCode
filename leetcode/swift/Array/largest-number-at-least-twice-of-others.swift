@@ -27,36 +27,23 @@ class Solution {
         if nums.count == 1 {
             return 0
         }
-        // [0,1,2],  [2,1,0],  [0,2,3,0]
         
         var maxIndex = 0
         var secondMaxIndex = 0
         for i in 1..<nums.count {
-            
             if nums[i] > nums[maxIndex] {
                 secondMaxIndex = maxIndex
                 maxIndex = i
             } else {
-                if (nums[i] > nums[secondMaxIndex]) {
-                    secondMaxIndex = i
-                }
-                
-                if  nums[i] < nums[secondMaxIndex] && i == 1 {
+                if ((nums[i] > nums[secondMaxIndex]) || (nums[i] < nums[secondMaxIndex] && i == 1)) {
                     secondMaxIndex = i
                 }
             }
-                
         }
         
-        print("maxIndex=\(maxIndex), secondMaxIndex=\(secondMaxIndex)")
-
-        if nums[secondMaxIndex] == 0 {
+        if (nums[secondMaxIndex] == 0) || (nums[maxIndex] / nums[secondMaxIndex] >= 2) {
             return maxIndex
         }
-        if nums[maxIndex] / nums[secondMaxIndex] >= 2 {
-            return maxIndex
-        }
-        
         return -1
     }
 }
