@@ -15,7 +15,7 @@ import Foundation
  执行用时：44 ms, 在所有 Swift 提交中击败了87.50%的用户
  内存消耗：13.8 MB, 在所有 Swift 提交中击败了6.67%的用户
  */
-class Solution {
+class MinTimeToVisitAllPoints {
     func minTimeToVisitAllPoints(_ points: [[Int]]) -> Int {
         var minTime = 0
         for i in 0..<points.count-1 {

@@ -55,6 +55,7 @@
 		80C5984A2572517100CD7629 /* maximize-distance-to-closest-person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C598492572517100CD7629 /* maximize-distance-to-closest-person.swift */; };
 		80C598582573430000CD7629 /* rank-transform-of-an-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C598572573430000CD7629 /* rank-transform-of-an-array.swift */; };
 		80CC97C5258D89CE00997957 /* minimum-time-visiting-all-points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC97C4258D89CE00997957 /* minimum-time-visiting-all-points.swift */; };
+		80CC97CA258D965C00997957 /* largest-number-at-least-twice-of-others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */; };
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
 		80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914CC254AF68900010D20 /* climbing-stairs.swift */; };
@@ -133,6 +134,7 @@
 		80C598492572517100CD7629 /* maximize-distance-to-closest-person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "maximize-distance-to-closest-person.swift"; sourceTree = "<group>"; };
 		80C598572573430000CD7629 /* rank-transform-of-an-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rank-transform-of-an-array.swift"; sourceTree = "<group>"; };
 		80CC97C4258D89CE00997957 /* minimum-time-visiting-all-points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "minimum-time-visiting-all-points.swift"; sourceTree = "<group>"; };
+		80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "largest-number-at-least-twice-of-others.swift"; sourceTree = "<group>"; };
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		80E914CC254AF68900010D20 /* climbing-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climbing-stairs.swift"; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				8063745A257BBCE500F9779D /* find-words-that-can-be-formed-by-characters.swift */,
 				80B6BA402585A55500693A65 /* diagonal-traverse-ii.swift */,
 				80CC97C4258D89CE00997957 /* minimum-time-visiting-all-points.swift */,
+				80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				803E5B782504CFE20095A89F /* find-median-from-data-stream.c in Sources */,
 				802D81AE250DB57000282733 /* first-bad-version.swift in Sources */,
 				803E5B832504CFE20095A89F /* move-zeroes.swift in Sources */,
+				80CC97CA258D965C00997957 /* largest-number-at-least-twice-of-others.swift in Sources */,
 				803E5B792504CFE20095A89F /* merge-two-sorted-lists.c in Sources */,
 				803E5B772504CFE20095A89F /* sort-list.c in Sources */,
 				803E5B752504CFE20095A89F /* two-sum.c in Sources */,
