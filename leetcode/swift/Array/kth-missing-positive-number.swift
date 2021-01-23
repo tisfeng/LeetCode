@@ -16,10 +16,44 @@ import Foundation
  */
 
 /**
+ 执行用时：28 ms, 在所有 Swift 提交中击败了100.00%的用户
+ 内存消耗：13.5 MB, 在所有 Swift 提交中击败了60.00%的用户
+ */
+class Solution {
+    func findKthPositive(_ arr: [Int], _ k: Int) -> Int {
+        var index = 0 // 缺失数哨兵
+        var i = 0
+        var num = 1 // 完整的正整数序列从1开始
+        let max = arr.last!
+        while index < k {
+            while i < arr.count {
+                if arr[i] != num {
+                    index += 1
+                    // arr未遍历完，但k已找到
+                    if index == k {
+                        print("break")
+                        break
+                    }
+                } else {
+                    i += 1
+                }
+                num += 1
+                // arr 已遍历完
+                if num > max {
+                    return max + k - index
+                }
+            }
+        }
+        return num
+    }
+}
+
+
+/**
  执行用时：1640 ms, 在所有 Swift 提交中击败了13.33%的用户
  内存消耗：13.9 MB, 在所有 Swift 提交中击败了6.67%的用户
  */
-class Solution {
+class FindKthPositive_13 {
     func findKthPositive(_ arr: [Int], _ k: Int) -> Int {
         var targetArr = [Int]() // 1,2,3,4,5,6,7,8,9
         for i in 0..<arr.last!+k {
@@ -31,34 +65,4 @@ class Solution {
         return arr[k-1]
     }
     
-}
-
-class Solution_ {
-    func findKthPositive(_ arr: [Int], _ k: Int) -> Int {
-        var index = 0 // 缺失数序列index
-        var i = 0 // arr 哨兵
-        var targetNum = 1
-        while index < k {
-            for num in arr {
-                if num == i {
-                    i += 1
-                } else {
-                    index += 1
-                }
-            }
-            
-            while i < arr.count {
-                if arr[i] == targetNum {
-                    i += 1
-                } else {
-                    index += 1
-                }
-                print("i=\(i), index=\(index)")
-            }
-            
-            print(index)
-        }
-        
-        return 0
-    }
 }
