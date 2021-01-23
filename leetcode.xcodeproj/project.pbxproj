@@ -11,6 +11,7 @@
 		802D81AC250D07CC00282733 /* search-insert-position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D81AB250D07CC00282733 /* search-insert-position.swift */; };
 		802D81AE250DB57000282733 /* first-bad-version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D81AD250DB57000282733 /* first-bad-version.swift */; };
 		802D81B0250DFE4500282733 /* guess-number-higher-or-lower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D81AF250DFE4500282733 /* guess-number-higher-or-lower.swift */; };
+		803855DA25BBBEFF001E6882 /* kth-missing-positive-number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803855D925BBBEFF001E6882 /* kth-missing-positive-number.swift */; };
 		803E5B2E2504CF4B0095A89F /* leetcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B2D2504CF4B0095A89F /* leetcodeApp.swift */; };
 		803E5B302504CF4B0095A89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803E5B2F2504CF4B0095A89F /* ContentView.swift */; };
 		803E5B322504CF520095A89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803E5B312504CF520095A89F /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		802D81AB250D07CC00282733 /* search-insert-position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "search-insert-position.swift"; sourceTree = "<group>"; };
 		802D81AD250DB57000282733 /* first-bad-version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "first-bad-version.swift"; sourceTree = "<group>"; };
 		802D81AF250DFE4500282733 /* guess-number-higher-or-lower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "guess-number-higher-or-lower.swift"; sourceTree = "<group>"; };
+		803855D925BBBEFF001E6882 /* kth-missing-positive-number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "kth-missing-positive-number.swift"; sourceTree = "<group>"; };
 		803E5B2A2504CF4B0095A89F /* leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803E5B2D2504CF4B0095A89F /* leetcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetcodeApp.swift; sourceTree = "<group>"; };
 		803E5B2F2504CF4B0095A89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				80B6BA402585A55500693A65 /* diagonal-traverse-ii.swift */,
 				80CC97C4258D89CE00997957 /* minimum-time-visiting-all-points.swift */,
 				80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */,
+				803855D925BBBEFF001E6882 /* kth-missing-positive-number.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				80CC97C5258D89CE00997957 /* minimum-time-visiting-all-points.swift in Sources */,
 				80C598402571FBAD00CD7629 /* summary-ranges.swift in Sources */,
 				803E5B842504CFE20095A89F /* three-consecutive-odds.swift in Sources */,
+				803855DA25BBBEFF001E6882 /* kth-missing-positive-number.swift in Sources */,
 				806A983B251100CA00F55AE9 /* guess-number-higher-or-lower-ii.swift in Sources */,
 				80C59845257248B900CD7629 /* triangle.swift in Sources */,
 				80637456257B90FD00F9779D /* minimum-increment-to-make-array-unique.swift in Sources */,
