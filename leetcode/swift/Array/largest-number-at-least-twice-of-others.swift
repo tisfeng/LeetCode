@@ -22,7 +22,7 @@ import Foundation
  执行用时：12 ms, 在所有 Swift 提交中击败了70.00%的用户
  内存消耗：13.7 MB, 在所有 Swift 提交中击败了11.11%的用户
  */
-class Solution {
+class DominantIndex {
     func dominantIndex(_ nums: [Int]) -> Int {
         if nums.count == 1 {
             return 0
