@@ -59,6 +59,7 @@
 		80CC97CA258D965C00997957 /* largest-number-at-least-twice-of-others.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */; };
 		80D404792507D98E0090F56C /* flipping-an-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D404782507D98E0090F56C /* flipping-an-image.swift */; };
 		80D7361C250686F5008F4F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 80D7361B250686F5008F4F07 /* README.md */; };
+		80DCA7C3263E8B100085C1FC /* h-index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DCA7C2263E8B100085C1FC /* h-index.swift */; };
 		80E914CD254AF68900010D20 /* climbing-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914CC254AF68900010D20 /* climbing-stairs.swift */; };
 		80E914D2254DB38B00010D20 /* fibonacci-number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E914D1254DB38B00010D20 /* fibonacci-number.swift */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,7 @@
 		80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "largest-number-at-least-twice-of-others.swift"; sourceTree = "<group>"; };
 		80D404782507D98E0090F56C /* flipping-an-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "flipping-an-image.swift"; sourceTree = "<group>"; };
 		80D7361B250686F5008F4F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		80DCA7C2263E8B100085C1FC /* h-index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "h-index.swift"; sourceTree = "<group>"; };
 		80E914CC254AF68900010D20 /* climbing-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climbing-stairs.swift"; sourceTree = "<group>"; };
 		80E914D1254DB38B00010D20 /* fibonacci-number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fibonacci-number.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +284,7 @@
 				80CC97C4258D89CE00997957 /* minimum-time-visiting-all-points.swift */,
 				80CC97C9258D965C00997957 /* largest-number-at-least-twice-of-others.swift */,
 				803855D925BBBEFF001E6882 /* kth-missing-positive-number.swift */,
+				80DCA7C2263E8B100085C1FC /* h-index.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				80B6BA412585A55500693A65 /* diagonal-traverse-ii.swift in Sources */,
 				803E5B7F2504CFE20095A89F /* find-majority-element-lcci.swift in Sources */,
 				8041C9872516E53500EC7C62 /* maximum-subarray.swift in Sources */,
+				80DCA7C3263E8B100085C1FC /* h-index.swift in Sources */,
 				80CC97C5258D89CE00997957 /* minimum-time-visiting-all-points.swift in Sources */,
 				80C598402571FBAD00CD7629 /* summary-ranges.swift in Sources */,
 				803E5B842504CFE20095A89F /* three-consecutive-odds.swift in Sources */,

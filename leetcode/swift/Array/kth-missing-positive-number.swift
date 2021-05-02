@@ -19,7 +19,7 @@ import Foundation
  执行用时：28 ms, 在所有 Swift 提交中击败了100.00%的用户
  内存消耗：13.5 MB, 在所有 Swift 提交中击败了60.00%的用户
  */
-class Solution {
+class FindKthPositive {
     func findKthPositive(_ arr: [Int], _ k: Int) -> Int {
         var index = 0 // 缺失数哨兵
         var i = 0
